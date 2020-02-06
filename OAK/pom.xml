@@ -1,0 +1,193 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>13.0.0</version>
+		<relativePath />
+	</parent>
+  
+  <groupId>uk.ac.cam.gurdon.organoidist</groupId>
+  <artifactId>OAK</artifactId>
+  <version>1.7.0</version>
+  <name>OAK</name>
+  <description>OAK</description>
+
+	<repositories>
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+  
+  	<dependencies>
+  		
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.scijava</groupId>
+			<artifactId>scijava-common</artifactId>
+		</dependency>
+		
+		<dependency>
+		    <groupId>net.clearvolume</groupId>
+		    <artifactId>clearvolume</artifactId>
+		    <version>1.4.2</version>
+
+		    <exclusions>
+		    	<exclusion>
+		    		<groupId>com.miglayout</groupId>
+		    		<artifactId>miglayout</artifactId>
+		    	</exclusion>
+				<exclusion>
+					<groupId>com.google.android.tools</groupId>
+   					<artifactId>dx</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>ch.systems.cisd</groupId>
+    				<artifactId>jhdf5</artifactId>
+				</exclusion>
+				<exclusion>
+		    	    <groupId>com.nativelibs4java</groupId>
+				    <artifactId>nativelibs4java-utils</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.nativelibs4java</groupId>
+    				<artifactId>opencl</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.nativelibs4java</groupId>
+    				<artifactId>bridj</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.nativelibs4java</groupId>
+    				<artifactId>javacl-core</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xalan</groupId>
+   					<artifactId>xalan</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>net.coremem</groupId>
+    				<artifactId>coremem</artifactId>
+				</exclusion>
+		    </exclusions>
+		</dependency>
+		
+		<dependency>
+	      <groupId>org.jogamp.gluegen</groupId>
+	      <artifactId>gluegen-rt-main</artifactId>
+	    </dependency>
+	    
+	    <dependency>
+	      <groupId>org.jogamp.gluegen</groupId>
+	      <artifactId>gluegen-rt</artifactId>
+	      <version>2.3.2</version>
+	    </dependency>
+	    
+		<dependency>
+		    <groupId>org.jfree</groupId>
+		    <artifactId>jfreechart</artifactId>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-math3</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij</artifactId>
+		</dependency>
+		
+		<dependency>
+	      <groupId>org.jogamp.jogl</groupId>
+	      <artifactId>jogl-all</artifactId>
+	      <version>2.3.2</version>
+	    </dependency>
+	    
+	    <dependency>
+		    <groupId>net.coremem</groupId>
+		    <artifactId>CoreMem</artifactId>
+		    <version>0.4.4</version>
+		    <exclusions>
+		    	<exclusion>
+					<groupId>com.google.android.tools</groupId>
+		   			<artifactId>dx</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.nativelibs4java</groupId>
+    				<artifactId>bridj</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		
+	</dependencies>
+	
+  <!-- placeholder elements required by maven enforcer start here -->
+  <url>http://mycompany.com/</url>
+	<inceptionYear>2017</inceptionYear>
+	<organization>
+		<name>My Company</name>
+		<url>http://mycompany.com/</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Simplified BSD License</name>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<!-- See https://imagej.net/Team -->
+		<developer>
+			<id>id</id>
+			<name>name</name>
+			<url>http://imagej.net/</url>
+			<roles>
+				<role>developer</role>
+			</roles>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>name</name>
+			<url>http://imagej.net/</url>
+			<roles><role>developer</role></roles>
+			<properties><id>id</id></properties>
+		</contributor>
+	</contributors>
+
+	<mailingLists>
+		<mailingList>
+			<name>ImageJ Forum</name>
+			<archive>http://forum.imagej.net/</archive>
+		</mailingList>
+	</mailingLists>
+
+	<scm>
+		<connection>scm:git:git://github.com/imagej/</connection>
+		<developerConnection>scm:git:git@github.com:imagej/</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/imagej/</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/imagej/</url>
+	</issueManagement>
+	<ciManagement>
+		<system>None</system>
+	</ciManagement>
+
+	<properties>
+		<package-name>com.mycompany.imagej</package-name>
+		<main-class>com.mycompany.imagej.GaussFiltering</main-class>
+		<license.licenseName>bsd_2</license.licenseName>
+		<license.copyrightOwners>My Company, Inc.</license.copyrightOwners>
+	</properties>
+  
+</project>
