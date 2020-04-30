@@ -8,9 +8,9 @@
 		<relativePath />
 	</parent>
   
-  <groupId>uk.ac.cam.gurdon.organoidist</groupId>
+  <groupId>uk.ac.cam.gurdon.oak</groupId>
   <artifactId>OAK</artifactId>
-  <version>1.7.0</version>
+  <version>1.7.1</version>
   <name>OAK</name>
   <description>OAK</description>
 
@@ -112,8 +112,8 @@
 	    
 	    <dependency>
 		    <groupId>net.coremem</groupId>
-		    <artifactId>CoreMem</artifactId>
-		    <version>0.4.4</version>
+		    <artifactId>coremem</artifactId>
+		    <version>0.4.5</version>
 		    <exclusions>
 		    	<exclusion>
 					<groupId>com.google.android.tools</groupId>

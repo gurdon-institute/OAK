@@ -233,10 +233,13 @@ public class AnalysisPanel extends JPanel implements ActionListener{
 			Method method = Method.fromName(mk[0]);
 			//if(method==null) continue;
 			
-			String[] ct = mk[1].split("-C");
-			//if(ct.length<=1) continue;
-			String type = ct[0];
-			int channel = Integer.valueOf(ct[1]);
+			int channel = 1;
+			String type = "Positive Calls";
+			if(mk.length>1){
+				String[] ct = mk[1].split("-C");
+				type = ct[0];
+				channel = Integer.valueOf(ct[1]);
+			}
 			
 			Analysis an = null;
 			if(mk.length>2){

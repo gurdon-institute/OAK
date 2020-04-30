@@ -664,7 +664,7 @@ public class OAK implements Command{
 		//ImagePlus img = new ImagePlus("E:\\Vanesa\\29.7.19 PEG SN Trial 1 Soft Sox.lif - well 2 glycerol Series004.tif");
 		//ImagePlus img = new ImagePlus("E:\\Vanesa\\29.7.19 PEG SN Trial 1 Stiff Sox.lif - TileScan 003_Series004.tif");
 		//ImagePlus img = new ImagePlus("E:\\Vanesa\\29.7.19 PEG SN Trial 1 Soft Sox.lif - well 2 glycerol Series004-2.tif");
-		ImagePlus img = new ImagePlus("E:\\Vanesa\\29.7.19 PEG SN Trial 1 Stiff Sox.lif - TileScan 003_Series004_small.tif");
+		//ImagePlus img = new ImagePlus("E:\\Vanesa\\29.7.19 PEG SN Trial 1 Stiff Sox.lif - TileScan 003_Series004_small.tif");
 		//ImagePlus img = new ImagePlus("E:\\Vanesa\\High sample rate Z 2.tif");
 		
 		//ImagePlus img = new ImagePlus("E:\\Chufan\\ERK Control SC-Org 2000nM Dye3hours _Airyscan Processing.czi - ERK Control SC-Org 2000nM Dye3hours _Airyscan Processing #1-crop.tif");
@@ -683,10 +683,10 @@ public class OAK implements Command{
 		
 
 		
-		final ImagePlus image = HyperStackConverter.toHyperStack(img, img.getNChannels(), img.getNSlices(), img.getNFrames());
+		/*final ImagePlus image = HyperStackConverter.toHyperStack(img, img.getNChannels(), img.getNSlices(), img.getNFrames());
 		image.setDisplayMode(IJ.GRAYSCALE);
 		image.setPosition(1, (int)(img.getNSlices()/2f), 1);
-		image.show();
+		image.show();*/
 		
 		new OAK().run();
 		
